@@ -5,15 +5,20 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
-  <title>Sorteio.io</title>
+  <title>Sorte.io</title>
 </head>
 
 <body>
   <div class="container-sorteio">
-    <h1>Sorteio<span>.io</span></h1>
-    <div class="box-sorteada">
-      <p class="pessoa-sorteada"></p>
-    </div> 
+    <h1>Sorte<span>.io</span></h1>
+    <div class="participantes-container">
+      <div class="form-add">
+        <button class="add" onclick="add()">Adicionar</button>
+        <input type="text" id="participante" />
+      </div>
+      <div class="participantes">
+      </div>
+    </div>
     <button class="sortear" onclick="sortear()">Sortear</button>
     <img class="logo" src="./images/logo.png" alt="logo">
     <p class="devs">
@@ -21,8 +26,6 @@
       <a href="https://www.instagram.com/a.m.ernando"><span>@</span>a.m.ernando</a>
     </p>
   </div>
-
-
   <script src="script.js"></script>
 </body>
 
