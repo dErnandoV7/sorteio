@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  /*background: linear-gradient(45deg, purple, ) no-repeat;*/
+  background: linear-gradient(350deg, rgb(121, 45, 129) 3.6%, rgb(36, 31, 98) 90.4%);
+  display: flex;
+  padding-top: 50px;
+  justify-content: center;
+  animation: fundo-animation 10s infinite linear;
+}
+
+.container-sorteio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+}
+
+.container-sorteio h1 span {
+  color: deeppink;
+}
+
+.box-sorteada {
+  min-height: 40px;
+  min-width: 150px;
+  background: deeppink;
+  border-radius: 10px;
+  margin-top: 20px;
+  color: #fff;
+  text-align: center;
+  padding: 16px;
+}
+
+.sortear {
+  margin-top: 20px;
+  background-color: #ff005b;
+  -webkit-text-fill-color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 10px;
+}
+
+@keyframes fundo-animation {
+
+  0% {
+    background-size: 100%;
+  }
+
+  10% {
+    background-size: 100%
+  }
+
+  50% {
+    background-size: 200%;
+  }
+
+  75% {
+    background-size: 200%
+  }
+
+
+  100% {
+    background-size: 100%
+  }
+
+}
+
+.logo {
+  margin-top: 40px;
+  width: 300px;
+  animation: logo 15s infinite linear;
+}
+
+@keyframes logo {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  25% {
+    transform: rotate(5deg);
+  }
+
+  50% {
+    transform: rotate(0deg);
+  }
+
+  75% {
+    transform: rotate(-5deg);
+  }
+  
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.devs{
+  display: flex;
+  margin-top: 100px;
+  
+  
+
+}
