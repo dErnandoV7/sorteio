@@ -53,8 +53,8 @@ body {
 }
 
 .form-add input {
-  width: 100%;
-  font-size: 20px;
+  width: 70%;
+  font-size: 16px;
   max-width: 400px;
   border: 1px solid #fff;
   background: transparent;
@@ -62,10 +62,15 @@ body {
   min-height: 30px;
   color: #ff005b;
   padding: 6px;
+  text-align: center;
 }
 
 .form-add input:focus {
   outline: none;
+}
+
+::placeholder {
+  color: #ddd;
 }
 
 .form-add button {
@@ -75,7 +80,7 @@ body {
   color: #fff;
   border: none;
   width: max-content;
-  font-size: 18px;
+  font-size: 14px;
 }
 
 .participantes {
@@ -107,12 +112,26 @@ body {
 }
 
 .sortear {
-  margin-top: 20px;
   background-color: #ff005b;
   -webkit-text-fill-color: white;
   padding: 8px 16px;
   border: none;
   border-radius: 10px;
+}
+
+.buttons {
+  display: flex;
+  margin-top: 40px;
+  align-items: center;
+  gap: 20px;
+}
+
+
+.clean {
+  background: transparent;
+  color: #fff;
+  font-size: 18px;
+  border: none;
 }
 
 @keyframes fundo-animation {
@@ -169,8 +188,7 @@ body {
 }
 
 .devs {
-  position: absolute;
-  bottom: 20px;
+  margin-top: 220px;
   display: flex;
   gap: 20px;
 }
@@ -182,4 +200,51 @@ body {
 
 .devs a span {
   color: #ff005b
+}
+
+.no-participants,
+.no-character,
+.itIsClean {
+  max-width: 360px;
+  background: #262626;
+  padding: 1rem;
+  color: #fff;
+  border-radius: 10px;
+  position: absolute;
+  bottom: 60px;
+  left: 20px;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  transition: .3s;
+  transform: translateX(-380px);
+}
+
+.popup-animation {
+  transform: translateX(0px);
+}
+
+.no-participants span,
+.no-character span,
+.itIsClean span {
+  color: #ff005b;
+}
+
+.vencedor {
+  background: #ff005b;
+  padding: 2.5rem 1rem;
+  border-radius: 8px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  backdrop-filter: blur(3px);
+  color: #fff;
+  border: none;
+}
+
+.vencedor img {
+  position: absolute;
+  top: 0px;
+  right: 0px
 }

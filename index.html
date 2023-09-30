@@ -13,18 +13,39 @@
     <h1>Sorte<span>.io</span></h1>
     <div class="participantes-container">
       <div class="form-add">
+        <input type="text" id="participante" placeholder="Nome do participante" />
         <button class="add" onclick="add()">Adicionar</button>
-        <input type="text" id="participante" />
+
       </div>
       <div class="participantes">
       </div>
     </div>
-    <button class="sortear" onclick="sortear()">Sortear</button>
+    <div class="buttons"><button class="clean" onclick="clean()">Limpar</button>
+      <button class="sortear" onclick="sortear()">Sortear</button>
+    </div>
     <img class="logo" src="./images/logo.png" alt="logo">
     <p class="devs">
       <a href="https://www.instagram.com/vinivasc_"><span>@</span>vinivasc_</a>
       <a href="https://www.instagram.com/a.m.ernando"><span>@</span>a.m.ernando</a>
     </p>
+
+    <div class="no-character">
+      <p>Insira o nome do(a) <span>participante !</span></p>
+      <img src="Images/x.svg" onclick="closeNoCharacter()" alt="">
+    </div>
+
+    <div class="no-participants">
+      <p>Adicione participantes para realizar o sorteio</p>
+      <img src="Images/x.svg" onclick="closeNoParticipants()" alt="">
+    </div>
+
+    <div class="itIsClean">
+      <p>Não há nada para limpar</p>
+      <img src="Images/x.svg" onclick="closeItIsClean()" alt="">
+    </div>
+
+    <dialog class="vencedor">
+    </dialog>
   </div>
   <script src="script.js"></script>
 </body>
