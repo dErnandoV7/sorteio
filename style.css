@@ -9,7 +9,6 @@
 
 body {
   min-height: 100vh;
-  /*background: linear-gradient(45deg, purple, ) no-repeat;*/
   background: linear-gradient(350deg, rgb(121, 45, 129) 3.6%, rgb(36, 31, 98) 90.4%);
   display: flex;
   padding-top: 50px;
@@ -95,16 +94,24 @@ body {
   75% {
     transform: rotate(-5deg);
   }
-  
+
   100% {
     transform: rotate(0deg);
   }
 }
 
-.devs{
+.devs {
+  position: absolute;
+  bottom: 20px;
   display: flex;
-  margin-top: 100px;
-  
-  
+  gap: 20px;
+}
 
+.devs a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.devs a span {
+  color: #ff005b
 }
