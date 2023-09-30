@@ -11,6 +11,10 @@
   display: none;
 }
 
+button {
+  cursor: pointer;
+}
+
 body {
   min-height: 100vh;
   background: linear-gradient(350deg, rgb(121, 45, 129) 3.6%, rgb(36, 31, 98) 90.4%);
@@ -29,6 +33,7 @@ body {
 
 .container-sorteio h1 {
   margin-bottom: 30px;
+  font-size: 40px;
 }
 
 .container-sorteio h1 span {
@@ -53,8 +58,8 @@ body {
 }
 
 .form-add input {
-  width: 70%;
-  font-size: 16px;
+  width: 100%;
+  font-size: 18px;
   max-width: 400px;
   border: 1px solid #fff;
   background: transparent;
@@ -117,6 +122,7 @@ body {
   padding: 8px 16px;
   border: none;
   border-radius: 10px;
+  font-size: 20px;
 }
 
 .buttons {
@@ -247,4 +253,10 @@ body {
   position: absolute;
   top: 0px;
   right: 0px
+}
+
+@media (max-width: 400px) {
+  .form-add input {
+    min-width: 80%;
+  }
 }
