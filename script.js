@@ -25,7 +25,7 @@ function sortear() {
 
   for (let i = 0; i < arrayParticipantes.length; i++) {
     if (i == (numberRandom)) {
-      document.querySelector('.vencedor').innerHTML = `<img src="Images/x.svg" onclick="closeDialog()"><p>${arrayParticipantes[i]} foi o vencedor!</p>`
+      document.querySelector('.vencedor').innerHTML = `<img src="images/x.svg" onclick="closeDialog()"><p>${arrayParticipantes[i]} foi o vencedor!</p>`
       console.log(document.querySelector('.vencedor').innerHTML)
       document.querySelector('.vencedor').showModal()
       break
